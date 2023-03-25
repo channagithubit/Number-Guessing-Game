@@ -1,0 +1,21 @@
+class ElectricBill
+{
+static void bill(int unit) 
+{
+int amount=0;
+if(unit>=1 && unit<=100){
+amount=0;
+}
+else if(unit>100 && unit<=200){
+amount=(unit-100)*5;
+}
+else{
+amount=500+(unit-200)*10;
+}
+System.out.println(amount);
+} 
+public static void main(String[] args) {
+bill(210);
+bill(350);
+}
+}
